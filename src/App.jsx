@@ -1,8 +1,13 @@
 import React from 'react'
+import Navbar from './components/layout/Navbar'
 
 const App = () => {
     return (
-        <h1 className='text-red-500'>Space Info</h1>
+        <>
+            <header>
+                <Navbar />
+            </header>
+        </>
     )
 }
 
