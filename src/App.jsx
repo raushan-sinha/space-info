@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Navbar from './components/layout/Navbar'
+import { ThemeContext } from './context/ThemeContext'
+import Home from './pages/Home';
 
 const App = () => {
+    const { theme } = useContext(ThemeContext);
+
     return (
         <>
-            <header>
-                <Navbar />
-            </header>
+            <main className={`min-h-screen ${theme === 'light' ? 'bg-[#101923] text-white' : 'bg-white text-black'}`}>
+                <header>
+                    <Navbar />
+                </header>
+                
+                <Home />
+            </main>
         </>
     )
 }
