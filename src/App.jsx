@@ -12,12 +12,13 @@ const App = () => {
                 <header>
                     <Navbar />
                 </header>
-                
-                <Home />
+
+                <section className='p-30'>
+                    <Home />
+                </section>
             </main>
         </>
     )
 }
 
-export default App
-// https://api.nasa.gov/planetary/apod?api_key=Ita5N8BJFS82UszAH0Ja7XHcUZpqAt8JcRRvcpbP
+export default App;
